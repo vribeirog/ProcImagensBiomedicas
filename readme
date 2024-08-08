@@ -1,0 +1,22 @@
+->instalar bibliotecas:
+
+pip install opencv-python torch
+
+->para instalar cuml : https://docs.rapids.ai/install
+
+->para instalar nvidia cuda toolkit:
+sudo apt install nvidia-cuda-toolkit  
+
+->para checar versão do cuda:
+nvcc --version
+
+->Para cuda 12:
+pip install \
+    --extra-index-url=https://pypi.nvidia.com \
+    cuml-cu12==24.6.*
+
+->Para cuda 11.4 - 11.8:
+pip install \
+    --extra-index-url=https://pypi.nvidia.com \
+    cuml-cu11==24.6.*
+
